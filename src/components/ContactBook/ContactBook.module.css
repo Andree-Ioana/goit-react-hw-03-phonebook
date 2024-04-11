@@ -1,0 +1,80 @@
+.contactBook {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.inputName{
+ margin-left: 30px;
+}
+.inputNumber {
+    margin-left: 16px;
+}
+
+.formContact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.formContact label {
+    margin-bottom: 10px;
+  
+}
+
+.formContact input[type="text"],
+.formContact input[type="tel"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formContact button[type="submit"] {
+    padding: 10px 20px;
+    width: 200px;
+    background-color: rgb(180, 66, 66);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formContact button[type="submit"]:hover {
+    background-color:#c82333;
+    };
+
+
+.filterInput {
+   
+    /* margin-bottom: 20px; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deleteBtn {
+    padding: 8px 12px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    background-color: #c82333;
+}
