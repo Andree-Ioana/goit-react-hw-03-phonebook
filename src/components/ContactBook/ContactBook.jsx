@@ -17,6 +17,21 @@ class ContactBook extends Component {
       filter: '',
     };
   }
+ 
+  componentDidMount() {
+    const storedContacts = localStorage.getItem("contacts");
+    if (storedContacts) {
+      this.setState({ contacts: JSON.parse(storedContacts) });
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState,) {
+    const { contacts } = this.state;
+    if (prevProps.contacts !== contacts) {
+      localStorage.setItem("contacts", JSON.stringify(contacts));
+   }
+ }
+
   loginInputId = nanoid();
 
   handleChangeName = event => {
